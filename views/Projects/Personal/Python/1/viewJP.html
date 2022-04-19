@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>転移学習を利用した画像自動整理プログラム</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">実装機能</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									イメージを自動的に整理する機能
+								</strong>
+							</p>
+							<p>
+								学習したモデルを使用すると、画像を自動的にフォルダに分類できます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									イメージで学習する機能
+								</strong>
+							</p>
+							<p>
+								学習したモデルを作成するために、所定の画像を事前に学習します。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">社会に貢献しようとしたこと</strong><br>
+				画像分類モデルだけを生成すると自動的に写真の整理をしてくれるので、写真を一つ一つずつ確認して分類する必要はありません。
+			</div>
+			<div class="contents">
+				<strong class="title1">背景と目的</strong><br>
+				写真を一つずつ確認して分類するのはとても面倒です。 そこで、画像分類モデルを利用して自動的に整理するプログラムを実装しました。
+			</div>
+			<div class="contents">
+				<strong class="title2">学んだこと</strong>
+					<ul>
+						<li> Jupyter Notebookで学習したモデルを作成する方法を学びました。</li>
+						<li>Flaskでサーバーを構築してHTTP POSTリクエストを処理する方法を学びました。</li>
+						<li> PythonでCommandまたはTerminalコマンドを実行する方法を学びました。</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">進行手順</strong>
+					<ol>
+						<li>「マ・ドンソク/キム・ジョングク/イ・ビョンホン分類器」のソースコードをダウンロードしました。</li>
+						<li>ウェブから画像をダウンロードする方法から、自分が直接画像をアップロードする方法に変更しました。</li>
+						<li>Flaskを使用しているため、画像分類モデルが作成されるとリンクが生成されます。 したがって、そのリンクにHTTP POSTに画像を送信すると、送信した画像がどのクラスに属しているかが応答します。 このリンクを使用してデスクトップの画像が分類されるようにするので、Pythonプログラムを別にしました。</li>
+						<li> PythonでCommandまたはTerminalコマンドを実行する方法、フォルダが存在しない場合にフォルダを作成する方法、ファイルリストを読み込む方法がわからず、Googleですべて見つかりました。</li>
+						<li>このようにして目的のプログラムを実装できました。</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">能力強化のために最も努力したこと</strong><br>
+				Jupyter Notebookで実装された既存のプログラム分析と新しいプログラムで再構築
+			</div>
+			<div class="contents">
+				<strong class="title1">全体構造</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">使用技術</strong><br>
+				Jupyter Notebook, Flask
+			</div>
+			<div class="contents">
+				<strong class="title1">開発環境</strong><br>
+				Colab, Python IDLE
+			</div>
+			<div class="contents">
+				<strong class="title1">追加の説明</strong>
+					<ul>
+						<li><a href="https://github.com/ndb796/CNN-based-Celebrity-Classification-AI-Service-Using-Transfer-Learning" target="_blank">「マ・ドンソク/キム・ジョングク/イ・ビョンホン分類器」ソースコード</a></li>
+						<li><a href="https://github.com/jhs951101/ImageClassifier" target="_blank">ソースコード</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

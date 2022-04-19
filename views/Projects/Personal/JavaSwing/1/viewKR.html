@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>AWS를 이용한 온라인 자음 퀴즈 게임</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">구현 기능</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									답안 입력 기능
+								</strong>
+							</p>
+							<p>
+								학생들은 퀴즈에 대한 답안을 입력할 수 있습니다. 정답을 맞추면 해당 학생이 선생님이 되서 퀴즈를 낼 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									퀴즈 출제 및 힌트 부여 기능
+								</strong>
+							</p>
+							<p>
+								선생님은 퀴즈를 내고 힌트를 부여할 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									사진 전송 기능
+								</strong>
+							</p>
+							<p>
+								선생님은 힌트로 사진을 전송할 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									서버 접속 기능
+								</strong>
+							</p>
+							<p>
+								온라인 자음 퀴즈를 진행하기 위해 서버에 접속해야 합니다.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">사회에 기여하려고 한 점</strong><br>
+				창의적인 게임을 제작해서 출시하므로 게임을 하면서 색다른 재미를 느낄 수 있습니다.
+			</div>
+			<div class="contents">
+				<strong class="title1">배경과 목적</strong><br>
+				창의적인 게임을 만들어서 사람들한테 서비스를 제공하기 위해, 게임 개발자가 될 것에 대비하기 위해 저만의 게임을 제작하게 되었습니다.
+			</div>
+			<div class="contents">
+				<strong class="title2">배운 점</strong>
+					<ul>
+						<li>Java에서 Multi Thread로 비동기 방식을 활용하는 법과 Multi Threading의 구조를 알게 되었습니다.</li>
+						<li>이미지를 byte로 변환해서 array에 저장하는 법을 알게 되었습니다.</li>
+						<li>Java Swing으로 클라이언트를 구현하는 법을 알게 되었습니다.</li>
+						<li>AWS에서 서버를 구축한 후 운영하는 법을 알게 되었습니다.</li>
+						<li>Python에서 한글로 된 문자열을 처리하는 법을 알게 되었습니다.</li>
+						<li>Python으로 서버를 구축하는 법을 알게 되었습니다.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">진행 절차</strong>
+					<ol>
+						<li>’Java의 정석’ 책에서 TCP/IP 프로그래밍 예제를 실행하였습니다.</li>
+						<li>구글에서 ‘TCP 소켓을 이용한 채팅 프로그램 예제’를 찾아 소스 코드를 분석하였고 구현 방법을 익혔습니다. 여기서, 예제에서는 Multi Thread로 비동기 방식을 사용하고 있었습니다.</li>
+						<li>예제를 수정해서 구현 방법 그대로 구현하였습니다.</li>
+						<li>한글 낱말에서 자음을 추출하는 법을 몰라서 구글에서 검색하였습니다.</li>
+						<li>후에는 이미지를 전송해서 힌트를 알려주는 기능도 추가하였습니다. 이것은 이미지를 byte array로 변환해서 전송하는 방식을 사용하였습니다.</li>
+						<li>이렇게 해서 원하는 프로그램을 구현할 수 있었습니다.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">역량 강화를 위해 가장 노력한 점</strong><br>
+				Java Swing으로 클라이언트 구현, Python으로 서버 구축 및 AWS에서 실행
+			</div>
+			<div class="contents">
+				<strong class="title1">전체 구조</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">사용 기술</strong><br>
+				Java, Python, TCP, AWS
+			</div>
+			<div class="contents">
+				<strong class="title1">개발 환경</strong><br>
+				Eclipse IDE, Python IDLE, Terminal in Mac
+			</div>
+			<div class="contents">
+				<strong class="title1">부연 설명</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/JaumQuiz" target="_blank">소스 코드</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

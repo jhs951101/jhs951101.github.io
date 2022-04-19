@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>REACT를 이용한 게시글 관리 프로그램</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">구현 기능</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									게시글 조회 기능
+								</strong>
+							</p>
+							<p>
+								현재 업로드된 게시글을 모두 조회할 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									게시글 작성 기능
+								</strong>
+							</p>
+							<p>
+								게시글을 새로 작성할 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									로그인 및 회원가입 기능
+								</strong>
+							</p>
+							<p>
+								홈페이지에 로그인 할 수 있고 아직 회원이 아니면 회원가입 할 수 있습니다.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title1">배경과 목적</strong><br>
+				요즘 기업마다 존재하는 것이 바로 홈페이지 입니다. 최근에 홈페이지들은 주로 React로 만들어지고 있습니다. 이 정도로 React는 웹 개발자들한테 기초 소양이 되었습니다. 따라서 웹 개발자가 될 것에 대비해서 기초 소양를 키우기 위해 저만의 홈페이지를 구현하였습니다.
+			</div>
+			<div class="contents">
+				<strong class="title2">배운 점</strong>
+					<ul>
+						<li>웹페이지에서 HTTP Request를 보내는 법과, GET과 POST의 차이를 알게 되었습니다.</li>
+						<li>React에서 JSON Array를 활용하는 법을 알게 되었습니다.</li>
+						<li>MongoDB로 데이터베이스를 구축하는 법과 React 서버와 연동하는 법을 알게 되었습니다.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">진행 절차</strong>
+				<ol>
+					<li>React를 설치한 후 새 프로젝트를 만들고 실행하였지만 아래의 오류 메시지가 뜨면서 실행되지 않았습니다.<br>
+command failed with exit code 1</li>
+					<li>오랫동안 조사한 끝에 M1칩을 탑재한 맥북은 Node v.15 이상을 깔아야 오류 없이 실행된다는 것을 알았습니다. 따라서, 가장 최신 버전인 v.16을 깔고 다시 실행하자 제대로 실행되었습니다.</li>
+					<li>John Ahn님의 ‘기초 노드 React 강의’를 하나씩 따라해서 로그인&로그아웃 홈페이지를 구현하였습니다. 여기에 홈페이지 상단바를 만들고 게시글 업로드 및 조회 기능을 추가하기로 하였습니다.</li>
+					<li>게시글 업로드는 회원가입 기능을 조금 수정하면 되지만 게시글 조회 기능은 데이터베이스에서 여러 개의 데이터를 가져와야 합니다. 그러나 React에서 구현하는 법을 몰라서 구글에서 찾아보니 find() 함수를 사용해야 한다는 것을 알게 되었습니다.</li>
+					<li>처음에는 아무것도 나오지 않았습니다. 데이터 자체가 전달되지 않은 것입니다. 로그인 기능을 살펴보니 데이터를 전달할 때는 JSON 배열 형태로 전달해야 한다는 것을 알았습니다.</li>
+					<li>JSON 배열 형태로 변환해서 전송하니 정상적으로 데이터를 받아서 게시글 목록을 출력하였습니다.</li>
+					<li>이렇게 해서 원하는 프로그램을 구현할 수 있었습니다.</li>
+				</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">역량 강화를 위해 가장 노력한 점</strong><br>
+				React로 홈페이지 구현, 웹 서버 구축 및 데이터베이스(MongoDB)와 연동
+			</div>
+			<div class="contents">
+				<strong class="title1">전체 구조</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">사용 기술</strong><br>
+				React JS, MongoDB
+			</div>
+			<div class="contents">
+				<strong class="title1">개발 환경</strong><br>
+				Visual Studio Code
+			</div>
+			<div class="contents">
+				<strong class="title1">부연 설명</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/LoginAndBoarding" target="_blank">소스 코드</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

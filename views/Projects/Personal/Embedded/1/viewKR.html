@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>Arduino를 이용한 장난감 스테이지</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">구현 기능</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									LED 발광 기능
+								</strong>
+							</p>
+							<p>
+								무대 근처에 있는 LED와 위에 달려 있는 LED가 반짝반짝 빛납니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									밝기 감지 기능
+								</strong>
+							</p>
+							<p>
+								밝은지 어두운지에 따라 LED가 반짝이는 방식이 달라집니다. 어두울 때 LED가 많이 반짝입니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									모터 작동 기능
+								</strong>
+							</p>
+							<p>
+								어두우면 LED가 반짝이면서 모터가 작동되므로 움직이는 LED가 됩니다.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title1">배경과 목적</strong><br>
+				컴퓨터시스템입문 수업 시간에 Arduino로 작품을 만드는 과제가 있었습니다. 최대한 창의적인 작품을 만들기 위해 제작하게 되었습니다.
+			</div>
+			<div class="contents">
+				<strong class="title2">배운 점</strong>
+					<ul>
+						<li>Arduino로 하드웨어를 설계하고 구현하는 법을 알게 되었습니다.</li>
+						<li>LED, 밝기 센서, 서보 모터를 활용하는 법을 알게 되었습니다.</li>
+						<li>Arduino로 폴링 방식을 구현하는 법과, 폴링 방식과 인터럽트 방식의 차이를 알 수 있었습니다.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">진행 절차</strong>
+					<ol>
+						<li>Arduino 프로그래밍을 하기 전에 박스, 테이프, 나무젓가락 등을 이용해서 스테이지 모형부터 구현하였습니다.</li>
+						<li>LED, 밝기 센서, 서보 모터의 각 예제 프로그램을 강의 자료에서 찾았고 원하는 대로 수정해서 하나로 합쳤습니다.</li>
+						<li>폴링 방식을 사용해서 밝기가 어두운지 밝은지에 따라 다르게 동작하도록 하였습니다.</li>
+						<li>약간의 시행 착오는 있었지만 코드를 면밀히 확인한 후 수정하였습니다.</li>
+						<li>이렇게 해서 원하는 프로그램을 구현할 수 있었습니다.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">역량 강화를 위해 가장 노력한 점</strong><br>
+				Arduino로 창의적인 작품 제작
+			</div>
+			<div class="contents">
+				<strong class="title1">전체 구조</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">사용 기술</strong><br>
+				Arduino
+			</div>
+			<div class="contents">
+				<strong class="title1">개발 환경</strong><br>
+				Arduino IDE
+			</div>
+			<div class="contents">
+				<strong class="title1">부연 설명</strong>
+					<ul>
+						<li><a href="https://cafe.naver.com/studyonarduino/4394" target="_blank">게시글</a></li>
+						<li><a href="https://github.com/jhs951101/MiniStage" target="_blank">소스 코드</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

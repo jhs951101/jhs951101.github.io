@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../css/styleToView.css">
+		<title>A program checking the number of people in a cafe using Python OpenCV</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">Implemented Functions</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Load the Number of People in each Cafe
+								</strong>
+							</p>
+							<p>
+								You can search the population number from a cafe near you. You can also see if they are currently open.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Sign-In and Sign-Up
+								</strong>
+							</p>
+							<p>
+								You can log in to the cafe-only program. If you are not yet a member, you can sign up.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Count People
+								</strong>
+							</p>
+							<p>
+								If you click 'START', face recognition is performed periodically to count the population.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">Things to Contribute to Society</strong><br>
+				Since you can see at a glance how many seats are filled in the cafes around you, you can easily decide which cafe to go to for a break and avoid wandering around as much as possible. It is estimated that it will be useful not only in cafes, but also in restaurants, banks, and community centers.
+			</div>
+			<div class="contents">
+				<strong class="title1">Background and Purpose</strong><br>
+				I visited the cafe to take a break, but the place was already full, so I had to find another cafe. It's also cumbersome to call the cafe and ask if it's full every time. So, to solve this problem, we implemented a program to check the number of people in a cafe using Python OpenCV.
+			</div>
+			<div class="contents">
+				<strong class="title2">What I Learned</strong>
+					<ul>
+						<li>I learned how to use OpenCV in Python.</li>
+						<li>I learned how to link Java programs and Python programs.</li>
+						<li>I learned how to use the asynchronous method with Multi-Thread in Java and the structure of Multi-Threading.</li>
+						<li>I learned how to implement a client with Java Swing.</li>
+						<li>I learned how to embed Google Maps in Android.</li>
+						<li>I learned how to implement a client in Android.</li>
+						<li>I learned how to build a server with Java, build a database with MySQL, and connect with JDBC.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">Process</strong>
+					<ol>
+						<li>I made a cafe-only program based on Java Swing and a user-only program based on the Android app. At this time, I put Google Maps on the app screen.</li>
+						<li>I built a server with Java, and the database was built with MySQL and then linked with JDBC. However, there was no response when the cafe program delivered information. So, as a result of searching on Google, I made the cafe program to inherit Thread in order to exchange information with the server, but I found out that in order for a multi-thread to share a variable value right away, I need to use volatile for the variable. I was able to solve the problem by using volatile.</li>
+						<li>I linked the Python program with the Cafe program and then make the Python program count the population by face recognition, which was the most difficult.</li>
+						<li>So, I found an example of face recognition using OpenCV on Google and modified it to count the population after analyzing the source code.</li>
+						<li>And, I referred the source code to link the Python program with the cafe program after finding an example of running a Python program in a Java program on Google.</li>
+						<li>In this way, I was able to implement the program I wanted.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
+				Implementing functions to recognize face and count population using OpenCV in Python and linking with Java Swing
+			</div>
+			<div class="contents">
+				<strong class="title1">Overall Structure</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">Used Skills</strong><br>
+				Android, Google Map, Python, OpenCV, Java, TCP, MySQL, AWS
+			</div>
+			<div class="contents">
+				<strong class="title1">Development Environment</strong><br>
+				Eclipse IDE, Android Studio, Python IDLE, PHPMyAdmin
+			</div>
+			<div class="contents">
+				<strong class="title1">Further Explanations</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/CafeConfirm" target="_blank">Source Code</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

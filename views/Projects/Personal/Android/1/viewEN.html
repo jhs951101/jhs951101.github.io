@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>
+			A program managing cover letters using blank space layout
+		</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">Implemented Functions</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Load a list of Cover Letters
+								</strong>
+							</p>
+							<p>
+								You can see a list of currently saved resumes.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Write Cover Letters
+								</strong>
+							</p>
+							<p>
+								You can write a new self-introduction letter. In this case, you can place blank spaces with '<' and '>'.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Deploy Cover Letters
+								</strong>
+							</p>
+							<p>
+								By filling in the blanks in the self-introduction letter, you can distribute it in your own words.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">Things to Contribute to Society</strong><br>
+				By arranging blank spaces in the self-introduction letter, it is very convenient to manage multiple self-introduction statements into one, and the number of mistakes made by typos is greatly reduced. In addition, it can be used not only for employment self-introduction, but also for graduate school academic plans and external activity applications.
+			</div>
+			<div class="contents">
+				<strong class="title1">Background and Purpose</strong><br>
+				If each company writes and manages a self-introduction separately, it is very inconvenient because when you edit one thing, you have to edit the rest one by one. If you only apply to one place, that's fine, but getting a job is a game of odds, so no job seeker will only apply to one place.
+			</div>
+			<div class="contents">
+				<strong class="title2">What I Learned</strong>
+					<ul>
+<li>I learned how to insert, modify, view and delete data after building SQLite on Android.</li>
+<li>I learned how to add sharing to Android.</li>
+<li>I learned how to use ListView on Android.</li>
+<li>I learned how to build an Android app.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">Process</strong>
+					<ol>
+						<li>First of all, the contents of the self-introduction letter must be permanently saved, so I created the SQLite DB within the app in the ‘Android Programming’ book and executed the data storage example.</li>
+<li>The self-introduction letter should be displayed as a list by item, and each self-introduction letter should have edit, delete, and export functions. So, there should be a button for each list. Therefore, I found an example of placing a button in each ListView item on Google and executed it.</li>
+<li>I implemented a function to manage self-introduction by item by combining the examples that have been executed so far and allowing the content to be modified or deleted when a button is touched.</li>
+<li>I implemented a function to add a self-introduction by placing an ‘add’ button at the bottom of the screen. At this time, I put the angle brackets (<, >) to place a blank space.</li>
+<li>When exporting, it is necessary to fill in the blanks created when writing the self-introduction letter, so in the example of placing buttons for each ListView item, only buttons were replaced with input fields and an input field was placed for each item.</li>
+<li>However, I did not know how to extract all the contents of the input field for each ListView item. So, I found an example code in Google and implemented a function to reflect the entered information in the self-introduction.</li>
+<li>Finally, I implemented a function to export the content of the self-introduction to KakaoTalk, etc after finding a sharing example on Google.</li>
+<li>In this way, I was able to implement the program I wanted.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
+				SQLite DB creation and data storage within the app, and new use of ListView
+			</div>
+			<div class="contents">
+				<strong class="title1">Overall Structure</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">Used Skills</strong><br>
+				Android, Java, SQLite
+			</div>
+			<div class="contents">
+				<strong class="title1">Development Environment</strong><br>
+				Android Studio
+			</div>
+			<div class="contents">
+				<strong class="title1">Further Explanations</strong>
+					<ul>
+						<li><a href="https://play.google.com/store/apps/details?id=spcompany.sharping.textmanagement" target="_blank">Release</a></li>
+						<li><a href="https://github.com/jhs951101/TextManagement" target="_blank">Source Code</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

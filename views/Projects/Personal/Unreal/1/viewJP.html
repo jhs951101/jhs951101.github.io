@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>部屋脱出ゲーム</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">実装機能</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									문이 열리는 기능
+								</strong>
+							</p>
+							<p>
+								문 근처로 가면 문이 열립니다. 만약 문이 잠겨 있다면 열리지 않고 열쇠가 필요하다는 문구가 뜹니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									순서대로 발판 밟기 기능
+								</strong>
+							</p>
+							<p>
+								발판을 순서대로 밟아야 잠긴 문이 열립니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									열쇠 획득 기능
+								</strong>
+							</p>
+							<p>
+								열쇠 근처로 가면 열쇠를 획득할 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									다음 스테이지 이동 기능
+								</strong>
+							</p>
+							<p>
+								현재 스테이지를 클리어하면 다음 스테이지로 이동합니다.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title1">背景と目的</strong><br>
+				最近、ゲーム開発時にUnityの次によく使うエンジンがUnrealです。 これほどUnrealもゲーム開発者たちに基礎素養になりました。 そのため、ゲーム開発者になることに備えて基礎素養を育てるために私だけのゲームを製作することになりました。
+			</div>
+			<div class="contents">
+				<strong class="title2">学んだこと</strong>
+					<ul>
+						<li>Unrealでブループリントでプログラムを実装する方法と、ブループリントとC++の長所と短所を学びました。</li>
+						<li>ブループリントでイベントを実装した後に呼び出す方法を学びました。</li>
+						<li>ブループリントでColor Objectのプロパティ値を変更する方法を学びました。</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">進行手順</strong>
+					<ol>
+						<li>’王初歩のためのUnrealエンジン4’講義を聞きながら一つずつフォローしました。 </li>
+						<li>ゲーム環境を構築した後、いくつかの機能を実装しました。 最も代表的には、4つの足場を順番に踏むとドアが開くようにしました。 </li>
+						<li>これはブループリントでイベントを実装した後に呼び出すようにしました。 そして、足場を踏むときにColor ObjectのColor値を変更して足場の色が変わるようにしました。 </li>
+						<li>しかし、私は意図したとおりに実行されませんでした。 そこで、講義でした内容を再び見ながら問題を見つけて修正したあとに、足場を順番に踏むとドアが開くようにできました。</li>
+						<li>このようにして目的のプログラムを実装できました。</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">能力強化のために最も努力したこと</strong><br>
+				Unrealで衝突判定、アニメーションを利用したクリエイティブゲームを実現
+			</div>
+			<div class="contents">
+				<strong class="title1">全体構造</strong><br>
+				<img src="../../../structures/single.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">使用技術</strong><br>
+				Unreal, Blueprints
+			</div>
+			<div class="contents">
+				<strong class="title1">開発環境</strong><br>
+				Unreal 4.2.3
+			</div>
+			<div class="contents">
+				<strong class="title1">追加の説明</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/RoomExiting" target="_blank">ソースコード</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

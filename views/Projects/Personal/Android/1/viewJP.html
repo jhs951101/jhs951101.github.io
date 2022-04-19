@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>空欄配置を利用した自己紹介管理プログラム</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">実装機能</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									自己紹介書のリストを照会する機能
+								</strong>
+							</p>
+							<p>
+								現在保存されている自己紹介書のリストを見ることができます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									自己紹介書を書く機能
+								</strong>
+							</p>
+							<p>
+								自己紹介書を新たに作成できます。 このとき、 ‘<‘ と ‘>’ で空のスペースを配置できます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									自己紹介書を配布する機能
+								</strong>
+							</p>
+							<p>
+								自己紹介書内の空欄を埋めて、必要な文章で配布することができます。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">社会に貢献しようとしたこと</strong><br>
+				自己紹介内容に空欄配置する方式で複数の自己紹介書を一つに統合して管理するので、とても便利で誤字が生じるミスもはるかに減ります。 また、就職自己紹介書だけでなく、大学院学業計画書、対外活動支援書などにも活用できます。
+			</div>
+			<div class="contents">
+				<strong class="title1">背景と目的</strong><br>
+				企業別に自己紹介書を別々に作成して別々に管理すれば、一つを修正するとき、残りも毎日修正しなければならないので、とても不便で、間違えれば誤字が生じることがあります。 一箇所にしか応援していれば大丈夫でしょうが、就職は確率の戦いなので、一箇所にだけ応援する求職者はいないでしょう。
+			</div>
+			<div class="contents">
+				<strong class="title2">学んだこと</strong>
+					<ul>
+						<li>AndroidでSQLiteを構築した後、データを挿入、編集、検索、削除する方法を学びました。</li>
+						<li>Androidに共有する機能を追加する方法を学びました。</li>
+						<li>AndroidでListViewを利用する方法を学びました。</li>
+						<li>Androidアプリの実装方法を学びました。</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">進行手順</strong>
+					<ol>
+						<li>優先自己紹介の内容を永久に保存する必要があるため、「Androidプログラミング」の本のアプリ内でSQLite DBを作成した後、データ保存の例を実行しました。</li>
+						<li>自己紹介を項目ごとにリストとして表示し、自己紹介ごとに修正、削除、エクスポート機能が必要なので、リストごとにボタンが必要です。そのため、ListView項目ごとにボタンを配置する例をGoogleで見つけて実行しました。</li>
+						<li>これまでに実行した例を1つにまとめ、ボタンタッチ時にその内容を修正または削除するようにして、自己紹介を項目別に管理する機能を実装しました。</li>
+						<li>画面の一番下に「追加」ボタンを配置して自己紹介書を追加する機能を実装しました。このとき、山かっこ（<、>）を入力して空のスペースを配置するようにしました。</li>
+						<li>エクスポートするときは、自己紹介書作成時に作成した空のスペースを埋めるようにする必要があるため、ListView項目ごとにボタンを配置する例で、ボタンのみを入力スペースに置き換えて、アイテムごとに入力スペースを配置しました。</li>
+						<li>しかし、ListView項目ごとに入力欄の内容をすべて抽出する方法がわからず、Googleでサンプルコードを見つけた後、参考に入力した内容を自己紹介して内容に反映する機能を実装しました。</li>
+						<li>最後に共有する例をGoogleで見つけた後、参考にして自己紹介の内容をカカオトークなどにエクスポートする機能を実装しました。</li>
+						<li>このようにして目的のプログラムを実装できました。</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">能力強化のために最も努力したこと</strong><br>
+				アプリ内でSQLite DBの作成とデータの保存、ListViewを新たに活用
+			</div>
+			<div class="contents">
+				<strong class="title1">全体構造</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">使用技術</strong><br>
+				Android, Java, SQLite
+			</div>
+			<div class="contents">
+				<strong class="title1">開発環境</strong><br>
+				Android Studio
+			</div>
+			<div class="contents">
+				<strong class="title1">追加の説明</strong>
+					<ul>
+						<li><a href="https://play.google.com/store/apps/details?id=spcompany.sharping.textmanagement" target="_blank">リリース</a></li>
+						<li><a href="https://github.com/jhs951101/TextManagement" target="_blank">ソースコード</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

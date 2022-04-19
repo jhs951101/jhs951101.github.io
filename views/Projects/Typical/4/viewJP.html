@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../css/styleToView.css">
+		<title>Unityと連動可能なArduinoゲームコントローラ</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">実装機能</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									ボールを操縦する機能
+								</strong>
+							</p>
+							<p>
+								コントローラを傾けてボールを操縦できます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									視点を変更する機能
+								</strong>
+							</p>
+							<p>
+								コントローラ内のボタンを押して視点を切り替えることができます。 赤いボタンを押すと反時計回りに、青色のボタンを押すと時計回りに、ハニカムボタンを押すと元の位置に戻ります。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									ボックスが消える機能
+								</strong>
+							</p>
+							<p>
+								ボールがボックスに近づくと、そのボックスは消えます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									勝負を判断する機能
+								</strong>
+							</p>
+							<p>
+								制限時間内にボックスを全て取り除くと勝ちます。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title1">背景と目的</strong><br>
+				コンピュータシステム入門 授業時間にArduinoで作品を作る課題がありました。 できるだけ創造的な作品を作るために制作することになりました。
+			</div>
+			<div class="contents">
+				<strong class="title2">学んだこと</strong>
+					<ul>
+						<li> ArduinoとUnityプログラムの連携方法を学びました。</li>
+						<li>ボタンとチルトセンサーの活用方法を学びました。</li>
+						<li> Arduinoでハードウェアを設計して実装する方法を学びました。</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">進行手順</strong>
+					<ol>
+						<li> Arduinoプログラミングの前に、ボックスとテープを適切に活用してゲームコントローラのモデルを実装しました。</li>
+						<li>チルトセンサーと3つの大きなボタンを購入した後、ゲームコントローラーモデルに取り付けました。</li>
+						<li>AduinoとUnityを連動させる作業をしましたが、これが最も難しかったです。 だから、お互いに連動する例を長い時間の終わりにGoogleで見つけた後、シリアルポートを合わせて何とか実行するようにしました。</li>
+						<li>相互に連動する例を参考にして、Unityベースの既存の空洞ゲームをC/C++ベースのArduinoプログラムと連動するように修正しました。</li>
+						<li>このようにして目的のプログラムを実装できました。</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">能力強化のために最も努力したこと</strong><br>
+				Arduinoで創造的な作品制作とUnityと連動
+			</div>
+			<div class="contents">
+				<strong class="title1">全体構造</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">使用技術</strong><br>
+				Arduino, Unity
+			</div>
+			<div class="contents">
+				<strong class="title1">開発環境</strong><br>
+				Arduino IDE, Unity
+			</div>
+			<div class="contents">
+				<strong class="title1">追加の説明</strong>
+					<ul>
+						<li>専攻科目「コンピュータグラフィックス」授業時間にした課題を改善し、専攻科目「コンピュータシステム入門」期末課題として提出しました。</li>
+						<li><a href="https://cafe.naver.com/studyonarduino/4527" target="_blank">게시글</a></li>
+						<li><a href="https://github.com/jhs951101/RollABallWithController" target="_blank">ソースコード</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

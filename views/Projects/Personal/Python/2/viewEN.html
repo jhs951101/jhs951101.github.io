@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>
+			A chatbot notifying infected people in Gimpo by COVID-19 using Telegram
+		</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">Implemented Functions</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Notify information when a person is Infected
+								</strong>
+							</p>
+							<p>
+								If a confirmed case occurs in Gimpo-si, the program will notify you from time to time.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Record information about Infected people
+								</strong>
+							</p>
+							<p>
+								Information on the occurrence of confirmed cases can be left as a record.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">Things to Contribute to Society</strong><br>
+				When a confirmed case of COVID-19 occurs, it can only be recorded as a record without notification, so you can get information on the occurrence of confirmed cases without being disturbed by notifications.
+			</div>
+			<div class="contents">
+				<strong class="title1">Background and Purpose</strong><br>
+				The existing COVID-19 emergency message is sent immediately when a confirmed person occurs, so there is a problem in that it is interrupted by a notification sounding at any time. However, if the emergency message is blocked, there is a problem that the information about the number of confirmed cases cannot be recorded. So, we implemented a chatbot so that you can get information about the number of confirmed cases without notification.
+			</div>
+			<div class="contents">
+				<strong class="title2">What I Learned</strong>
+					<ul>
+						<li>I learned how to control a Telegram chatbot with a Python program.</li>
+<li>I learned how to crawl with BeautifulSoup in Python.</li>
+<li>I learned how to split a string with the split() function in Python.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">Process</strong>
+					<ol>
+						<li>I downloaded the source code for ‘Make your own LAN girlfriend with chatbot’. Here, the source code used a library called 'telegram.ext'.</li>
+<li>I found an example of web crawling on Google and executed it. Here, the example uses BeautifulSoup.</li>
+<li>On the website of Gimpo City Hall, only the articles of confirmed cases appeared, and then clicked 'View Source' to closely analyze the web page code. After that, I used the split() function to get only the title, content, and link of the post.</li>
+<li>I created a new chatbot as shown on YouTube, and combined it with the web crawling example to notify after crawling.</li>
+<li>I need to know if there are new posts with confirmed cases. This is done by storing the titles of recent posts in a text file and comparing them periodically. A new one is created if the text file does not exist.</li>
+<li>In this way, I was able to implement the program I wanted.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
+				Implementing a chatbot (Telegram) controller in Python and running it on AWS
+			</div>
+			<div class="contents">
+				<strong class="title1">Overall Structure</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">Used Skills</strong><br>
+				Python, Telegram, AWS
+			</div>
+			<div class="contents">
+				<strong class="title1">Development Environment</strong><br>
+				Python IDLE
+			</div>
+			<div class="contents">
+				<strong class="title1">Further Explanations</strong>
+					<ul>
+						<li><a href="https://github.com/kairess/girlfriend_bot" target="_blank">'Make your own LAN girlfriend with chatbot' Source Code</a></li>
+						<li><a href="https://github.com/jhs951101/GimpoCOVID19" target="_blank">Source Code</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

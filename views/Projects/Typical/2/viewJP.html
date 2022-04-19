@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../css/styleToView.css">
+		<title>Python OpenCVを利用したカフェ内の人口数確認プログラム</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">実装機能</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									カフェ別の人口数を照会する機能
+								</strong>
+							</p>
+							<p>
+								私の近くのカフェから人口数を見ることができます。 現在営業中の地図がわかります。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									ログインと会員登録する機能
+								</strong>
+							</p>
+							<p>
+								カフェ専用プログラムにログインできます。 まだ会員でない場合は、会員登録できます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									人口を数える機能
+								</strong>
+							</p>
+							<p>
+								「START」をクリックすると、定期的に顔認識をして人口数を数えます。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">社会に貢献しようとしたこと</strong><br>
+				自分の周りのカフェに席がどれだけ満たされているかを一目で把握できるので、どのカフェに行って休むのが簡単にでき、無駄になることを最大限に防ぐことができます。 カフェではなく、食堂、銀行、住民センターなどでも役に立つと推定されます。
+			</div>
+			<div class="contents">
+				<strong class="title1">背景と目的</strong><br>
+				休憩のためにカフェを訪れましたが、すでに席がいっぱいになって別のカフェをまた探さなければならない問題が発生します。 また、カフェに電話して席がいっぱいになったか、毎回聞くのは面倒です。 そこで、この問題を解決するために、Python OpenCVを利用したカフェ内の人口数確認プログラムを実装しました。
+			</div>
+			<div class="contents">
+				<strong class="title2">学んだこと</strong>
+					<ul>
+						<li> PythonでOpenCVを利用する方法を学びました。</li>
+						<li> JavaプログラムとPythonプログラムの連携方法を学びました。</li>
+						<li> JavaからMulti Threadへの非同期方式の活用方法とMulti Threadingの構造を学びました。</li>
+						<li> Java Swingでクライアントを実装する方法を学びました。</li>
+						<li>AndroidにGoogle Mapを含める方法を学びました。</li>
+						<li>Androidでクライアントを実装する方法を学びました。</li>
+						<li> Javaでサーバーを構築し、MySQLでデータベースを構築し、JDBCと連携する方法を学びました。</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">進行手順</strong>
+					<ol>
+						<li>Java Swingベースでカフェ専用プログラムを作成し、Androidアプリベースでユーザー専用プログラムを作成しました。この時、アプリ画面にGoogleマップを入れました。</li>
+						<li>Javaでサーバーを構築し、MySQLでデータベースを構築した後、JDBCと連動しました。しかし、カフェ番組で情報を伝えても、何の反応もなかった。そこで、Googleで調べた結果、サーバーと情報をやり取りするためにカフェプログラムがThreadを継承するようにしました。 volatileを使って問題を解決できました。</li>
+						<li> Pythonプログラムをカフェプログラムと連動させてから、Pythonプログラムで顔認識で人口数を数えるようにする必要がありますが、これは最も困難でした。</li>
+						<li>OpenCVを使用した顔認識の例をGoogleで見つけ、ソースコード分析後の人口数も数えるように修正しました。</li>
+						<li>そして、JavaプログラムでPythonプログラムを実行する例をGoogleで見つけた後、ソースコードを参照してPythonプログラムをカフェプログラムと連動させるようにしました。</li>
+						<li>このようにして目的のプログラムを実装できました。</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">能力強化のために最も努力したこと</strong><br>
+				PythonでOpenCVを使用した顔認識と人口カウント機能の実装とJava Swingと連動
+			</div>
+			<div class="contents">
+				<strong class="title1">全体構造</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">使用技術</strong><br>
+				Android, Google Map, Python, OpenCV, Java, TCP, MySQL, AWS
+			</div>
+			<div class="contents">
+				<strong class="title1">開発環境</strong><br>
+				Eclipse IDE, Android Studio, Python IDLE, PHPMyAdmin
+			</div>
+			<div class="contents">
+				<strong class="title1">追加の説明</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/CafeConfirm" target="_blank">ソースコード</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

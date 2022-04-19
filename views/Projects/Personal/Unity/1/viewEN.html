@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>
+			A game to shoot an enemy online
+		</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">Implemented Functions</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Shoot objects
+								</strong>
+							</p>
+							<p>
+								You can press the ‘Z’ key to fire a bullet and attack the opponent’s fighter.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Control Fighter Plane
+								</strong>
+							</p>
+							<p>
+								You can control the fighter by pressing the arrow keys.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Manage Staminas
+								</strong>
+							</p>
+							<p>
+								If you get hit by a bullet, your stamina gauge will decrease.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Sign-In and Sign-Up
+								</strong>
+							</p>
+							<p>
+								You can log in to the game and sign up if you are not already a member.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title1">Background and Purpose</strong><br>
+				These days, I use Unity a lot for developing smartphone games. To this extent, Unity has become a basic knowledge for mobile game developers. Also, these days, games are all online. So, in preparation for becoming a game developer, I have created my own online game to develop basic knowledge.
+			</div>
+			<div class="contents">
+				<strong class="title2">What I Learned</strong>
+					<ul>
+						<li>I learned how to handle Collision in Unity and the difference between Collision and Trigger.</li>
+<li>I learned how to build a server with PUN2 and how to build a database with Firebase.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">Process</strong>
+					<ol>
+						<li>I followed retr0's lecture on ‘Making a Unity multiplayer network game in one shot’ lecture.</li>
+<li>I also listened to Gold Metal's lecture on ‘2D vertical scrolling shooting’ until the 2nd lecture. After that, I decided to make my own 'online shooting game'.</li>
+<li>First, I implemented a function of controlling the airplane and firing the bullet as taught in the lecture. When the left and right buttons are pressed, I had the airplane rotate clockwise or counterclockwise, and the health gauge reduced further when the bullet is hit.</li>
+<li>I built a server with PUN2 and built a database with Firebase. However, when I ran the program after interlocking, the following error message appeared when the bullet hit the wall.<br>
+Failed to 'network-remove' GameObject.</li>
+<li>As a result of searching on Google, I had a clone created for each player's space when an object (GameObject) is created on the network. And, I had the clone move in the same way when the object moves. Here, there is a rule that only the player who created the object can remove it when removing an object. An error occurred because the deletion process was executed recklessly without following this.</li>
+<li>So, the error message went away when I modified the player who created the object to delete the object.</li>
+<li>In this way, I was able to implement the program I wanted.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
+				Building a game server with Photon, implementing data storage with Firebase, and creating online games with Unity
+			</div>
+			<div class="contents">
+				<strong class="title1">Overall Structure</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">Used Skills</strong><br>
+				Unity, Photon, Firebase
+			</div>
+			<div class="contents">
+				<strong class="title1">Development Environment</strong><br>
+				Unity 2020.1.9f1
+			</div>
+			<div class="contents">
+				<strong class="title1">Further Explanations</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/OnlineShootingGame" target="_blank">Source Code</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

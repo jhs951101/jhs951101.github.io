@@ -1,0 +1,97 @@
+body {
+    color: #000000;
+    font-family: 'Malgun Gothic';
+    font-size: 15px;
+}
+
+.view {
+    width: 80%;
+    left: 50%;  /* 문단 가운데 정렬 */
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.contents {
+    margin-bottom: 30px;
+}
+
+.title1 {  /* #6E8DF5 */
+    color: #888888;
+}
+
+.title2 {  /* #0000FF */
+    color: #0000C0;
+}
+
+.functions-table {
+    border-spacing: 10px;
+}
+
+.function-image {
+    width: 100%;
+}
+
+.function-contents {
+    vertical-align: text-top;
+}
+
+.structure {
+    width: 500px;
+}
+
+.classification {
+    font-size: 20px;
+}
+
+.lists {
+    line-height: 170%;
+}
+
+.language-button {
+	width: 80px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	border: 1px solid #EEEEEE;
+	background: #DDDDDD;
+	cursor: pointer;
+	color: black;
+	font-style: normal;
+}
+
+.language-button:hover {
+    background-color: #555555;
+    color: #FFFFFF;
+}
+
+#profile-image {
+    width: 150px;
+}
+
+#titles {
+    margin: 0px 0px 15px 0px;
+}
+
+#portfolio-title {
+    font-family: "Playfair Display", Georgia, serif;
+    margin: 15px 0px 0px 0px;
+    padding: 0px;
+}
+
+#portfolio-subtitle {
+    color: #4E96EA;
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+}
+
+#container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#inner-container {
+	text-align: center;
+}

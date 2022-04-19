@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../css/styleToView.css">
+		<title>Python OpenCV를 이용한 카페 내 인구수 확인 프로그램</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">구현 기능</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									카페별 인구수 조회 기능
+								</strong>
+							</p>
+							<p>
+								내 근처에 있는 카페부터 인구수를 조회할 수 있습니다. 현재 영업 중인지도 알 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									로그인 및 회원가입 기능
+								</strong>
+							</p>
+							<p>
+								카페 전용 프로그램에 로그인 할 수 있습니다. 아직 회원이 아니면 회원가입 할 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									인구수 세기 기능
+								</strong>
+							</p>
+							<p>
+								’START’를 클릭하면 주기적으로 얼굴 인식을 해서 인구수를 셉니다.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">사회에 기여하려고 한 점</strong><br>
+				내 주변의 카페에 자리가 얼마나 찼는지 한 눈에 파악할 수 있으므로 어느 카페에 가서 쉴지 쉽게 정할 수 있고 헛걸음질 하는 것을 최대한 방지할 수 있습니다. 카페 말고 식당, 은행, 주민센터 등에서도 유용하게 쓰일 것으로 추정됩니다.
+			</div>
+			<div class="contents">
+				<strong class="title1">배경과 목적</strong><br>
+				쉬기 위해 카페를 방문하였으나 이미 자리가 꽉 차서 다른 카페를 또 찾아야 하는 문제가 발생합니다. 또한 카페에 전화해서 자리가 꽉 찼는지 매번 묻기에는 번거롭습니다. 그래서 이 문제를 해결하기 위해 Python OpenCV를 이용한 카페 내 인구 수 확인 프로그램을 구현하였습니다.
+			</div>
+			<div class="contents">
+				<strong class="title2">배운 점</strong>
+					<ul>
+						<li>Python에서 OpenCV를 활용하는 법을 알게 되었습니다.</li>
+						<li>Java 프로그램과 Python 프로그램을 연동하는 법을 알게 되었습니다.</li>
+						<li>Java에서 Multi Thread로 비동기 방식을 활용하는 법과 Multi Threading의 구조를 알게 되었습니다.</li>
+						<li>Java Swing으로 클라이언트를 구현하는 법을 알게 되었습니다.</li>
+						<li>Android에 Google Map을 포함하는 법을 알게 되었습니다.</li>
+						<li>Android로 클라이언트를 구현하는 법을 알게 되었습니다.</li>
+						<li>Java로 서버를 구축하고 MySQL로 데이터베이스를 구축하고 JDBC로 연동하는 법을 알게 되었습니다.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">진행 절차</strong>
+					<ol>
+						<li>Java Swing 기반으로 카페 전용 프로그램을 만들었고 Android 앱 기반으로 사용자 전용 프로그램을 만들었습니다. 이때, 앱 화면에 구글 지도 넣었습니다.</li>
+						<li>Java로 서버를 구축하였고, MySQL로 데이터베이스를 구축한 후 JDBC로 연동하였습니다. 그러나 카페 프로그램에서 정보를 전달 했는데도 아무런 반응이 없었습니다. 그래서, 구글에서 찾아본 결과, 서버와 정보를 주고받기 위해 카페 프로그램이 Thread를 상속받도록 하였는데, Multi Thread가 변수 값을 바로 공유하려면, 해당 변수에 volatile을 써야한다는 것을 알게 되었습니다. volatile을 쓰니 문제를 해결할 수 있었습니다.</li>
+						<li>Python 프로그램을 카페 프로그램과 연동한 다음 Python 프로그램에서 얼굴 인식으로 인구수 세도록 해야 하는데, 이것이 가장 어려웠습니다.</li>
+						<li>그래서 OpenCV를 이용한 얼굴 인식 예제를 구글에서 찾아서 소스 코드 분석 후 인구수도 셀 수 있도록 수정하였습니다.</li>
+						<li>그리고 Java 프로그램에서 Python 프로그램을 실행하는 예제를 구글에서 찾은 후 소스 코드 참고해서 Python 프로그램을 카페 프로그램과 연동되도록 하였습니다.</li>
+						<li>이렇게 해서 원하는 프로그램을 구현할 수 있었습니다.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">역량 강화를 위해 가장 노력한 점</strong><br>
+				Python에서 OpenCV를 이용한 얼굴 인식 및 인구 수 카운트 기능 구현 및 Java Swing하고 연동
+			</div>
+			<div class="contents">
+				<strong class="title1">전체 구조</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">사용 기술</strong><br>
+				Android, Google Map, Python, OpenCV, Java, TCP, MySQL, AWS
+			</div>
+			<div class="contents">
+				<strong class="title1">개발 환경</strong><br>
+				Eclipse IDE, Android Studio, Python IDLE, PHPMyAdmin
+			</div>
+			<div class="contents">
+				<strong class="title1">부연 설명</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/CafeConfirm" target="_blank">소스 코드</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

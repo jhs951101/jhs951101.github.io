@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../css/styleToView.css">
+		<title>Unityを利用したメタバス農作物管理プログラム</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">実装機能</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									移動とジャンプする機能
+								</strong>
+							</p>
+							<p>
+								方向キーを押すと移動でき、スペースバーを押してジャンプすることもできます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									植物の情報を検索する機能
+								</strong>
+							</p>
+							<p>
+								メタバス環境内で植物に近づいた後、ボタンをクリックすると、植物の実際の姿を含む多くの情報を見ることができます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									店舗に接続する機能
+								</strong>
+							</p>
+							<p>
+								農家の店にアクセスして、現在販売中の農作物を照会して購入することができます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									農作物を購入する機能
+								</strong>
+							</p>
+							<p>
+								保有中のキャッシュで農作物を購入することができます。 キャッシュが足りない場合は充電できます。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">社会に貢献しようとしたこと</strong><br>
+				メタバス環境でも農作物を育てることができるので、農作物を育てる場所まで直接行く必要はありません。 また、人工知能プログラムを通じてコンピュータが農作物を知って管理してくれることも可能です。
+			</div>
+			<div class="contents">
+				<strong class="title1">背景と目的</strong><br>
+				メタバス環境はまだ大韓民国に多く構築されていません。 最も代表的には、メタバス環境で農作物を育てることができるサービスは今大韓民国にありません。 そのため、メタバス環境で農作物を育てることができるプログラムを実装することになりました。
+			</div>
+			<div class="contents">
+				<strong class="title2">学んだこと</strong>
+					<ul>
+						<li> UnityでHTTPリクエストを送信する方法を学びました。</li>
+						<li> HTTPリクエストを送信して、NHオープンプラットフォームで支払い機能を実装する方法を学びました。</li>
+						<li> HTTPリクエストを送信して、公共データポータルから公共データをインポートする方法を学びました。</li>
+						<li>UnityでAgoraを使用して音声通信とビデオ通信を行う方法を学びました。</li>
+						<li> PUN2でサーバーを構築する方法とFirebaseでデータベースを構築する方法を学びました。</li>
+						<li>Unityでメタバス環境を構築する方法を学びました。</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">進行手順</strong>
+					<ol>
+						<li>アゴラを使って音声通信する例をダウンロードしました。</li>
+						<li> PUN2でサーバーを構築し、Firebaseでデータベースを構築しました。</li>
+						<li> NHオープンプラットフォームで支払い機能を実装し、公共データポータルから天気データをインポートするようにしましたが、これは最も困難でした。</li>
+						<li>これで、GoogleがUnityからHTTP Requestを送信する例を私のプログラムに適用して、UnityをNHオープンプラットフォームと連携させました。</li>
+						<li>そして大会を主催した会社で行われた講義を再び見てフォローした後、ソースコードを修正して公共データポータルから天気データを読み込むようにしました。</li>
+						<li>デザイナーがZeplinで設計した内容を慎重に見ながら、Unityで直接実装しました。</li>
+						<li>このようにして目的のプログラムを実装できました。</li>
+						<li>デモ映像を撮影した後、Google Driveにアップロードして企画者に送りました。</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">担当した役割と最も努力したこと</strong><br>
+				プログラム実装総括担当、HTTP RequestでNHオープンプラットフォーム連動および公共データポータルAPIを使用
+			</div>
+			<div class="contents">
+				<strong class="title1">全体構造</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">使用技術</strong><br>
+				Unity, Photon, Firebase, Agora, NHオープンプラットフォーム, HTTP, Zeplin, Google Drive
+			</div>
+			<div class="contents">
+				<strong class="title1">開発環境</strong><br>
+				Unity 2020.1.9f1
+			</div>
+			<div class="contents">
+				<strong class="title1">追加の説明</strong>
+					<ul>
+						<li>2021年メタバスベースのフィンテックハッカートンに出品して奨励賞を受けました。</li>
+						<li><a href="https://youtu.be/H0pmcLaKkpw" target="_blank">デモ動画</a></li>
+						<li><a href="https://github.com/jhs951101/SmartFarm" target="_blank">ソースコード</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

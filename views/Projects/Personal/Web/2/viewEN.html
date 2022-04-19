@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>
+			A program managing posts using React
+		</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">Implemented Functions</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Load Posts
+								</strong>
+							</p>
+							<p>
+								You can view all currently uploaded posts.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Write Posts
+								</strong>
+							</p>
+							<p>
+								You can create a new post.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Sign-In and Sign-Up
+								</strong>
+							</p>
+							<p>
+								You can log in to the website and register as a member if you are not yet a member.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title1">Background and Purpose</strong><br>
+				Every company these days has a website. Recently, homepages are mainly made with React. To this extent, React became the basic knowledge for web developers. Therefore, in preparation for becoming a web developer, I have implemented my own website to develop basic knowledge.
+			</div>
+			<div class="contents">
+				<strong class="title2">What I Learned</strong>
+					<ul>
+						<li>I learned how to send HTTP requests from a web page and the difference between GET and POST.</li>
+<li>I learned how to use JSON Arrays in React.</li>
+<li>I learned how to build a database with MongoDB and how to interface with React server.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">Process</strong>
+					<ol>
+						<li>I created and ran a new project after installing React, but it failed with the error message below.<br>
+command failed with exit code 1</li>
+<li>After a long investigation, I found that the MacBook with the M1 chip requires Node v.15 or higher to run without errors. So, I ran it again, and it worked properly, after I installed v.16, the most recent version</li>
+<li>I implemented the login & logout homepage by following John Ahn's 'Basic Node React lecture' one by one. Here, I decided to create a top bar on the homepage and add post upload and search functions.</li>
+<li>Uploading a post requires a little modification of the member registration function, but the post search function requires fetching multiple data from the database. However, I didn't know how to implement it in React, so I googled it and found that I have to use the find() function.</li>
+<li>At first, nothing came out. The data itself is not passed. When I looked at the login function, I found that I had to pass it in the form of a JSON array when passing data.</li>
+<li>It received the data normally and printed the list of posts when I converted it into JSON array and sent it.</li>
+<li>In this way, I was able to implement the program I wanted.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
+				Implementing a website with React, building a web server, and interworking with a database (MongoDB)
+			</div>
+			<div class="contents">
+				<strong class="title1">Overall Structure</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">Used Skills</strong><br>
+				React JS, MongoDB
+			</div>
+			<div class="contents">
+				<strong class="title1">Development Environment</strong><br>
+				Visual Studio Code
+			</div>
+			<div class="contents">
+				<strong class="title1">Further Explanations</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/LoginAndBoarding" target="_blank">Source Code</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

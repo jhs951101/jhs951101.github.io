@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>방 탈출 게임</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">구현 기능</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									문이 열리는 기능
+								</strong>
+							</p>
+							<p>
+								문 근처로 가면 문이 열립니다. 만약 문이 잠겨 있다면 열리지 않고 열쇠가 필요하다는 문구가 뜹니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									순서대로 발판 밟기 기능
+								</strong>
+							</p>
+							<p>
+								발판을 순서대로 밟아야 잠긴 문이 열립니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									열쇠 획득 기능
+								</strong>
+							</p>
+							<p>
+								열쇠 근처로 가면 열쇠를 획득할 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									다음 스테이지 이동 기능
+								</strong>
+							</p>
+							<p>
+								현재 스테이지를 클리어하면 다음 스테이지로 이동합니다.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title1">배경과 목적</strong><br>
+				요즘 게임 개발 시 Unity 다음으로 많이 사용하는 엔진이 Unreal 입니다. 이 정도로 Unreal 역시 게임 개발자들한테 기초 소양이 되었습니다. 따라서 게임 개발자가 될 것에 대비해서 기초 소양을 키우기 위해 저만의 게임을 제작하게 되었습니다.
+			</div>
+			<div class="contents">
+				<strong class="title2">배운 점</strong>
+					<ul>
+						<li>Unreal에서 블루프린트로 프로그램을 구현하는 법과, 블루프린트와 C++의 장단점을 알게 되었습니다.</li>
+						<li>블루프린트로 이벤트를 구현한 후 호출하는 법을 알게 되었습니다.</li>
+						<li>블루프린트로 Color Object의 속성 값을 변경하는 법을 알게 되었습니다.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">진행 절차</strong>
+					<ol>
+						<li>’왕초보를 위한 Unreal 엔진 4’ 강의를 들으면서 하나씩 따라하였습니다.</li>
+						<li>게임 환경을 구축한 후 여러 기능을 구현하였습니다. 가장 대표적으로, 4개의 발판을 순서대로 밟으면 문이 열리도록 하였습니다.</li>
+						<li>이것은 블루프린트로 이벤트를 구현한 후 호출하도록 하였습니다. 그리고 발판을 밟을 때 Color Object의 Color 값을 변경해서 발판의 색상이 바뀌도록 하였습니다.</li>
+						<li>그러나, 제가 의도한 대로 실행되지 않았습니다. 그래서, 강의에서 따라한 내용을 다시 살펴보면서 문제를 찾아 수정한 끝에, 발판을 순서대로 밟으면 문이 열리도록 할 수 있었습니다.</li>
+						<li>이렇게 해서 원하는 프로그램을 구현할 수 있었습니다.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">역량 강화를 위해 가장 노력한 점</strong><br>
+				Unreal로 충돌 판정, 애니메이션을 이용한 창의적인 게임 구현
+			</div>
+			<div class="contents">
+				<strong class="title1">전체 구조</strong><br>
+				<img src="../../../structures/single.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">사용 기술</strong><br>
+				Unreal, Blueprints
+			</div>
+			<div class="contents">
+				<strong class="title1">개발 환경</strong><br>
+				Unreal 4.2.3
+			</div>
+			<div class="contents">
+				<strong class="title1">부연 설명</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/RoomExiting" target="_blank">소스 코드</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

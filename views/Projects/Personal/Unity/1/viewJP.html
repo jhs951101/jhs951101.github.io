@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>オンラインシューティングゲーム</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">実装機能</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									弾丸を発射する機能
+								</strong>
+							</p>
+							<p>
+								「Z」キーを押すと弾が発射され、相手の戦闘機を攻撃することができます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									戦闘機を操縦する機能
+								</strong>
+							</p>
+							<p>
+								方向キーを押して戦闘機を操縦できます。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									ステミナを管理する機能
+								</strong>
+							</p>
+							<p>
+								弾丸を当てると、ステミナゲージが減少します。
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									ログインと会員登録する機能
+								</strong>
+							</p>
+							<p>
+								ゲームにログインでき、まだ会員でない場合は、会員登録できます。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title1">背景と目的</strong><br>
+				最近、スマートフォンゲームの開発にはUnityをたくさん使用しています。 これほどUnityはモバイルゲーム開発者たちに基礎素養になりました。 また、最近のゲームはすべてオンライン化されているのが特徴です。 そのため、ゲーム開発者になるために基礎素養を育てるために、独自のオンラインゲームを制作することになりました。
+			</div>
+			<div class="contents">
+				<strong class="title2">学んだこと</strong>
+					<ul>
+						<li>UnityでCollisionを処理する方法と、CollisionとTriggerの違いを学びました。</li>
+						<li> PUN2でサーバーを構築する方法とFirebaseでデータベースを構築する方法を学びました。</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">進行手順</strong>
+					<ol>
+						<li> retr0さんの「Unityマルチプレイヤーネットワークゲーム一発で作る」講義を聞きながら一つずつフォローしました。</li>
+						<li>また、ゴールドメタル様の「2D鐘スクロールシューティング」講義を2講までだけ聞きました。この後、私だけの「オンラインシューティングゲーム」を作ることにしました。</li>
+						<li>最初に講義で知らされたように飛行機を操縦して弾が発射される機能を実装したが、左右ボタンを押したときに飛行機が時計方向または反時計回りに回転するように修正し、弾を当てると体力ゲージが削る機能を追加実装</li>
+						<li> PUN2でサーバーを構築し、Firebaseでデータベースを構築しました。ただし、連携後にプログラムを実行すると、弾丸が壁に当たったときに次のエラーメッセージが表示されました。<br>
+						Failed to 'network-remove' GameObject.</li>
+						<li>Googleで調べた結果、ネットワーク上でオブジェクト（GameObject）を作成すると、プレーヤーのスペースごとにレプリカを作成し、オブジェクトが移動するとレプリカも同じように移動します。ここで、オブジェクトを削除するときは、オブジェクトを作成したプレイヤーだけを削除できるというルールがあります。これを守らずにランダムな削除処理をしたため、エラーが発生しました。</li>
+						<li>オブジェクトを作成したプレイヤー側でオブジェクトを削除するように修正すると、エラーメッセージが消えました。</li>
+						<li>このようにして目的のプログラムを実装できました。</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">能力強化のために最も努力したこと</strong><br>
+				Photonでゲームサーバーを構築、Firebaseでデータ保存機能を実装し、Unityでオンラインゲームを作成
+			</div>
+			<div class="contents">
+				<strong class="title1">全体構造</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">使用技術</strong><br>
+				Unity, Photon, Firebase
+			</div>
+			<div class="contents">
+				<strong class="title1">開発環境</strong><br>
+				Unity 2020.1.9f1
+			</div>
+			<div class="contents">
+				<strong class="title1">追加の説明</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/OnlineShootingGame" target="_blank">ソースコード</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>

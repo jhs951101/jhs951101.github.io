@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../css/styleToView.css">
+		<title>R 추천 라이브러리를 이용한 Tip 추천 프로그램</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">구현 기능</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									Tip 추천 기능
+								</strong>
+							</p>
+							<p>
+								해당 사용자가 좋아할 만한 Tip을 설정해놓은 주기에 따라 이메일로 추천받을 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									평점 부여 기능
+								</strong>
+							</p>
+							<p>
+								추천받은 Tip or 검색으로 조회한 Tip에 평점을 부여할 수 있습니다. 이러한 평점은 또 다른 Tip을 추천하기 위한 지표로 사용됩니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/3.png" alt="function3 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									Tip 추가 기능
+								</strong>
+							</p>
+							<p>
+								원한다면 직접 Tip을 등록할 수 있습니다.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									Tip 검색 기능
+								</strong>
+							</p>
+							<p>
+								홈페이지에 접속해서 현재 존재하는 Tip을 검색할 수 있습니다. 이렇게 검색 후 조회하는 것도 또 다른 Tip을 추천하기 위한 지표로 사용됩니다.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title2">사회에 기여하려고 한 점</strong><br>
+				일상 생활의 Tip을 조금씩 받는 것을 통해 정보를 더 많이 얻게 되므로 매번 필요한 정보를 검색해야 하는 번거로움을 조금이나마 줄일 수 있고 더욱 보람찬 생활을 할 수 있습니다.
+			</div>
+			<div class="contents">
+				<strong class="title1">배경과 목적</strong><br>
+				본인한테 중요한 혜택을 놓쳐서 나중에 안타까움을 호소하는 일이 발생합니다. 또한 본인한테 중요한 내용을 매번 검색하는 것이 너무 번거롭습니다. 그래서 이 문제를 최대한 해결하기 위해 R 추천 라이브러리를 이용한 Tip 추천 프로그램을 구현하였습니다.
+			</div>
+			<div class="contents">
+				<strong class="title2">배운 점</strong>
+					<ul>
+						<li>R에서 recommenderlab으로 추천 알고리즘을 구현하는 법과, User 협업 필터링과 Item 기반 협업 필터링의 차이를 알게 되었습니다.</li>
+						<li>Java 프로그램과 R 프로그램을 연동하는 법을 알게 되었습니다.</li>
+						<li>Java에서 Transport로 SMTP를 이용해서 메일을 전송하는 법과, SMTP, POP3, IMAP의 차이를 알게 되었습니다.</li>
+						<li>Java와 Servlet으로 웹 서버를 구축하는 법과 MySQL로 데이터베이스를 구축해서 JDBC로 연동하는 법을 알게 되었습니다.</li>
+						<li>웹페이지에서 HTTP Request를 보내는 법과, GET과 POST의 차이를 알게 되었습니다.</li>
+						<li>JSP, CSS, JavaScript로 웹페이지를 구현하는 법을 알게 되었습니다.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">진행 절차</strong>
+					<ol>
+<li>’R을 이용한 추천 시스템’ 책에서 평가 정보를 기반으로 추천하는 예제를 실행한 후 recommenderlab으로 추천 알고리즘으로 구현하였습니다.</li>
+<li>JSP와 Servlet으로 웹페이지와 웹서버를 구축하였고, MySQL로 데이터베이스를 구축한 후 JDBC로 연동하였습니다.</li>
+<li>Tip 검색 결과가 10개씩 나오도록 하였습니다.</li>
+<li>R 프로그램을 웹서버와 연동한 다음 웹서버에서 이메일이 전송되도록 하였는데, 이것이 가장 어려웠습니다.</li>
+<li>그래서 Java 프로그램에서 R 프로그램을 실행하는 예제를 구글에서 찾은 후 소스 코드를 참고해서 R 프로그램을 웹서버와 연동되도록 하였습니다.</li>
+<li>그리고 Java 프로그램에서 Transport와 SMTP를 이용한 이메일 전송 예제를 구글에서 찾아서 소스 코드를 분석한 후 웹 서버에서 이메일 전송이 되도록 하였습니다.</li>
+<li>이렇게 해서 원하는 프로그램을 구현할 수 있었습니다.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">역량 강화를 위해 가장 노력한 점</strong><br>
+				R에서 추천 라이브러리를 이용한 추천 기능 설계 및 데이터베이스(MySQL), 홈페이지와 연동
+			</div>
+			<div class="contents">
+				<strong class="title1">전체 구조</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">사용 기술</strong><br>
+				JSP, CSS, JavaScript, Java, Servlet, HTTP, R, SMTP, MySQL
+			</div>
+			<div class="contents">
+				<strong class="title1">개발 환경</strong><br>
+				Eclipse IDE, R Studio, PHPMyAdmin
+			</div>
+			<div class="contents">
+				<strong class="title1">부연 설명</strong>
+					<ul>
+						<li>2017년 2학기에 학사 학위 논문으로 제출하였고 합격 통보까지 받았습니다.</li>
+						<li><a href="https://github.com/jhs951101/NotifyTips" target="_blank">소스 코드</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>
