@@ -15,11 +15,13 @@ body {
     margin-bottom: 30px;
 }
 
-.title1 {  /* #6E8DF5 */
+.title1 {
+    font-size: 20px;
     color: #888888;
 }
 
-.title2 {  /* #0000FF */
+.title2 {
+    font-size: 20px;
     color: #0000C0;
 }
 
